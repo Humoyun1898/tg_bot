@@ -3,7 +3,6 @@ import os
 from aiogram import Bot, Dispatcher, F
 from aiogram.types import Message, ReplyKeyboardMarkup, KeyboardButton
 from aiogram.enums import ParseMode
-from aiogram.client.default import DefaultBotProperties
 from aiogram.filters import CommandStart
 
 
@@ -14,10 +13,7 @@ from storage import user_data
 API_TOKEN = '7915223040:AAHtggDka27CgXPFjl6EVo4cNR0gNPfQ_e0'
 OWNER_ID = 5914148670
 
-bot = Bot(
-    token=API_TOKEN,
-    default=DefaultBotProperties(parse_mode=ParseMode.HTML)
-)
+bot = Bot(token=API_TOKEN, parse_mode=ParseMode.HTML)
 dp = Dispatcher()
 
 @dp.message(CommandStart())
