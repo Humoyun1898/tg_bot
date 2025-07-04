@@ -1,13 +1,11 @@
 services:
   - type: web
-    name: telegram-order-bot
+    name: telegram-bot
     env: python
     plan: free
-    buildCommand: pip install -r requirements.txt
-    startCommand: python bot.py
-    autoDeploy: true
+    region: oregon
+    buildCommand: pip install -r tg_bot/requirements.txt
+    startCommand: python -m tg_bot.bot
     envVars:
-      - key: API_TOKEN
-        value: 7915223040:AAHtggDka27CgXPFjl6EVo4cNR0gNPfQ_e0
-      - key: OWNER_ID
-        value: "5914148670"
+      - key: PYTHON_VERSION
+        value: 3.11.8
