@@ -5,9 +5,9 @@ from aiogram.filters import Command
 from aiogram.enums import ParseMode
 from aiogram.client.default import DefaultBotProperties
 
-from products import categories, category_units
-from keyboards import main_menu, category_keyboard, remove_menu
-from storage import user_data
+from tg_bot.src.products import categories, category_units
+from tg_bot.src.keyboards import main_menu, category_keyboard, remove_menu
+from tg_bot.src.storage import user_data
 
 API_TOKEN = "8199829547:AAEhP9S6kjWFYxiX5U7mdHYjZA9e_RMeKTo"
 OWNER_ID = 5914148670

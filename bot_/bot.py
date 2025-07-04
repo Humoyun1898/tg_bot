@@ -6,9 +6,9 @@ from aiogram.enums import ParseMode
 from aiogram.client.default import DefaultBotProperties
 from aiogram.filters import CommandStart
 
-from products import categories, category_units
-from keyboards import main_menu, category_keyboard, remove_menu
-from storage import user_data
+from tg_bot.src.products import categories, category_units
+from tg_bot.src.keyboards import main_menu, category_keyboard, remove_menu
+from tg_bot.src.storage import user_data
 
 
 

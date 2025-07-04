@@ -1,5 +1,5 @@
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
-from products import categories
+from tg_bot.src.products import categories
 
 main_menu = ReplyKeyboardMarkup(
     resize_keyboard=True,
