@@ -1,4 +1,0 @@
-aiogram==3.2.0
-aiohttp
-certifi
-pydantic
